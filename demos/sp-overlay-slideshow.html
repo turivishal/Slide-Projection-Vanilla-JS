@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Slide Projection Vanilla JS - Overlay Slideshow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../build/slide-projection.styles.min.css">
+    <style>
+        .center {
+            text-align: center;
+        }
+
+        .left {
+            text-align: left !important;
+        }
+
+        .right {
+            text-align: right !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3 class="center">Simple Overlay Slideshow</h3>
+    <div class="sp-wrapper">
+        <div class="sp-slideshow">
+
+            <!-- empty element for overlay -->
+            <div class="sp-overlay"></div>
+
+            <img class="sp-slide" src="./images/sp1.jpg" alt="SP1" data-sp-title="Slide 1"
+                data-sp-desc="This is slide 1" />
+            <img class="sp-slide" src="./images/sp2.jpg" alt="SP2" data-sp-title="Slide 2"
+                data-sp-desc="This is slide 2" />
+            <img class="sp-slide" src="./images/sp3.jpg" alt="SP3" data-sp-title="Slide 3"
+                data-sp-desc="This is slide 3" />
+            <img class="sp-slide" src="./images/sp4.jpg" alt="SP4" data-sp-title="Slide 4"
+                data-sp-desc="This is slide 4" />
+            <img class="sp-slide" src="./images/sp5.jpg" alt="SP5" data-sp-title="Slide 5"
+                data-sp-desc="This is slide 5" />
+
+        </div>
+    </div>
+
+    <h3 class="center">Custom Template</h3>
+    <div class="sp-wrapper">
+        <div class="sp-slideshow"
+            data-sp-overlay-template="<span class=left>&nbsp;<br>{{slideNum}} / {{slideCount}}</span> <br> {{title}}<br>{{desc}}">
+
+            <!-- empty element for overlay -->
+            <div class="sp-overlay"></div>
+
+            <img class="sp-slide" src="./images/sp1.jpg" alt="SP1" data-sp-title="Slide 1"
+                data-sp-desc="This is slide 1" />
+            <img class="sp-slide" src="./images/sp2.jpg" alt="SP2" data-sp-title="Slide 2"
+                data-sp-desc="This is slide 2" />
+            <img class="sp-slide" src="./images/sp3.jpg" alt="SP3" data-sp-title="Slide 3"
+                data-sp-desc="This is slide 3" />
+            <img class="sp-slide" src="./images/sp4.jpg" alt="SP4" data-sp-title="Slide 4"
+                data-sp-desc="This is slide 4" />
+            <img class="sp-slide" src="./images/sp5.jpg" alt="SP5" data-sp-title="Slide 5"
+                data-sp-desc="This is slide 5" />
+
+        </div>
+
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+</body>
+
+<script src="../build/slide-projection.vanilla.min.js"></script>
+
+</html>

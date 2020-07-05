@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Slide Projection Vanilla JS - General Examples Slideshow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../build/slide-projection.styles.min.css">
+    <style>
+        .center {
+            text-align: center;
+        }
+
+        #pauser {
+            width: 45%;
+            padding: 30px;
+            margin: auto;
+            text-align: center;
+            font-size: 16px
+        }
+
+        .info {
+            padding: 5px 2px;
+            color: #9B4D39;
+            background: #FCE9E3;
+            border: solid 1px #FBE1D5;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3 class="center">Examples Slideshow</h3>
+    <div id="pauser" class="info">Hover over me to pause 4nd slideshow</div>
+    <div class="sp-wrapper">
+        <div 
+            class="sp-slideshow" 
+            data-sp-pause-on-hover="#pauser" 
+            
+            data-sp-speed="4000"
+            data-sp-auto-play="true"
+
+            data-sp-fx="slide" 
+            data-sp-fx-next="next-slide"
+            data-sp-fx-prev="prev-slide"
+            data-sp-fx-active="active-slide"
+            data-sp-fx-initial="initial-slide"
+
+            data-sp-caption-template="Slide {{slideNum}}">
+
+            <!-- empty element for caption -->
+            <div class="sp-caption"></div>
+            <div class="sp-overlay"></div>
+
+            <div class="sp-slide" data-sp-desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In placerat risus bibendum, luctus nunc et, ultricies mauris. Pellentesque sagittis euismod urna, blandit venenatis sapien tristique et. Nam condimentum commodo risus eget venenatis. Etiam ac elit tortor. Etiam vel semper leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam eleifend, diam ac congue dictum, nisl libero tempus ex, sagittis maximus elit dolor sed justo. Aenean faucibus leo eu dictum tempus. Mauris nec facilisis risus.">
+                <img src="./images/sp1.jpg" alt="SP1" />
+            </div>
+            <div class="sp-slide" data-sp-desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                <img src="./images/sp2.jpg" alt="SP2" />
+            </div>
+            <div class="sp-slide" data-sp-desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                <img src="./images/sp3.jpg" alt="SP3" />
+            </div>
+            <div class="sp-slide" data-sp-desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                <img src="./images/sp4.jpg" alt="SP4" />
+            </div>
+            <div class="sp-slide" data-sp-desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                <img src="./images/sp5.jpg" alt="SP5" />
+            </div>
+
+            <div class="sp-button-next"></div>
+            <div class="sp-button-prev"></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="../build/slide-projection.vanilla.min.js"></script>
+
+</html>
