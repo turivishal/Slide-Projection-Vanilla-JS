@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Slide Projection Vanilla JS - Caption Slideshow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../build/slide-projection.styles.min.css">
+    <style>
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3 class="center">Simple Caption Slideshow</h3>
+    <div class="sp-wrapper">
+        <div class="sp-slideshow">
+
+            <!-- empty element for caption -->
+            <div class="sp-caption"></div>
+
+            <img class="sp-slide" src="./images/sp1.jpg" alt="SP1" />
+            <img class="sp-slide" src="./images/sp2.jpg" alt="SP2" />
+            <img class="sp-slide" src="./images/sp3.jpg" alt="SP3" />
+            <img class="sp-slide" src="./images/sp4.jpg" alt="SP4" />
+            <img class="sp-slide" src="./images/sp5.jpg" alt="SP5" />
+
+        </div>
+    </div>
+
+    <h3 class="center">Custom Template</h3>
+    <div class="sp-wrapper">
+        <div class="sp-slideshow" data-sp-caption="#custom-caption"
+            data-sp-caption-template="Slide {{slideNum}} of {{slideCount}}">
+
+            <img class="sp-slide" src="./images/sp1.jpg" alt="SP1" />
+            <img class="sp-slide" src="./images/sp2.jpg" alt="SP2" />
+            <img class="sp-slide" src="./images/sp3.jpg" alt="SP3" />
+            <img class="sp-slide" src="./images/sp4.jpg" alt="SP4" />
+            <img class="sp-slide" src="./images/sp5.jpg" alt="SP5" />
+
+        </div>
+
+    </div>
+
+    <!-- empty element for caption -->
+    <div id="custom-caption" class="center"></div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+</body>
+
+<script src="../build/slide-projection.vanilla.min.js"></script>
+
+</html>

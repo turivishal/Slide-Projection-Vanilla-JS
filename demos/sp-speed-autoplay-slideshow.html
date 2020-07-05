@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Slide Projection Vanilla JS - Speed and Autoplay Slideshow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../build/slide-projection.styles.min.css">
+    <style>
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3 class="center">Autoplay On - 3000 MilliSeconds</h3>
+    <div class="sp-wrapper">
+        <div class="sp-slideshow" data-sp-speed="3000" data-sp-auto-play="true">
+
+            <img class="sp-slide" src="./images/sp1.jpg" alt="SP1" />
+            <img class="sp-slide" src="./images/sp2.jpg" alt="SP2" />
+            <img class="sp-slide" src="./images/sp3.jpg" alt="SP3" />
+            <img class="sp-slide" src="./images/sp4.jpg" alt="SP4" />
+            <img class="sp-slide" src="./images/sp5.jpg" alt="SP5" />
+        </div>
+    </div>
+
+    <h3 class="center">Autoplay Off</h3>
+    <div class="sp-wrapper">
+        <div class="sp-slideshow" data-sp-auto-play="false">
+
+            <!-- prev/next links -->
+            <div class="sp-button-prev"></div>
+            <div class="sp-button-next"></div>
+
+            <img class="sp-slide" src="./images/sp1.jpg" alt="SP1" />
+            <img class="sp-slide" src="./images/sp2.jpg" alt="SP2" />
+            <img class="sp-slide" src="./images/sp3.jpg" alt="SP3" />
+            <img class="sp-slide" src="./images/sp4.jpg" alt="SP4" />
+            <img class="sp-slide" src="./images/sp5.jpg" alt="SP5" />
+        </div>
+    </div>
+
+</body>
+
+<script src="../build/slide-projection.vanilla.min.js"></script>
+
+</html>
