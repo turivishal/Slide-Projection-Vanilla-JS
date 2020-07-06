@@ -1,6 +1,10 @@
 # Slide Projection (SP)
 Slide Projection - Its a image slider which is built in pure vanilla js
 
+**CSS** [production version](https://cdn.jsdelivr.net/gh/turivishal/Slide-Projection-Vanilla-JS/build/slide-projection.styles.min.css), or the [development version](https://cdn.jsdelivr.net/gh/turivishal/Slide-Projection-Vanilla-JS/build/slide-projection.styles.css)
+
+**JS** [production version](https://cdn.jsdelivr.net/gh/turivishal/Slide-Projection-Vanilla-JS@master/build/slide-projection.vanilla.min.js) or the [development version](https://cdn.jsdelivr.net/gh/turivishal/Slide-Projection-Vanilla-JS@master/build/slide-projection.vanilla.js) 
+
 # Features:
 
 - Next / Prev Controls
