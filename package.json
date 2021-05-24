@@ -1,0 +1,18 @@
+{
+  "name": "slide-ptojection",
+  "version": "1.0.0",
+  "description": "Slide Projection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Slide Projection"
+  ],
+  "author": "Vishal Turi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
